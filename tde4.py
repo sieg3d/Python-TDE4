@@ -34,7 +34,7 @@ print(limitador(a, b, limite))
 '''
 
 #4. Escreva uma função que recebe dois números (a e b) como parâmetro e retorna a quantidade (0, 1 ou 2) deles que é maior que um terceiro parâmetro, chamado limite.
-
+'''
 def conta_se_maior(a, b, limite):
    quantidade = 0
    if a > limite:
@@ -51,3 +51,25 @@ b = float(input('Digite o valor de B: '))
 limite = float(input('Digite o limite: '))
 
 print('Quantidade de números maiores que limite:', conta_se_maior(a, b, limite))
+'''
+
+#5. Escreva uma função que, dado um número nota representando a nota de um estudante, converte o valor de nota para um conceito (A, B, C, D, E e F).
+
+def conceito(nota):
+    if nota >= 9:
+        return 'A (Excelente!)'
+    elif nota < 9 and nota >= 7:
+        return 'B (Bom!)'
+    elif nota < 7 and nota >= 5:
+        return 'C (Regular.)'
+    elif nota < 5 and nota >= 3:
+        return 'D (Insatisfatório.)'
+    elif nota < 3 and nota > 0:
+        return 'E (Fraco.)'
+    else:
+        return 'F (Falha!)'
+    
+
+nota = float(input('Insira a nota do aluno: '))
+
+print(f'A nota {nota} convertida em conceito é:', conceito(nota))
