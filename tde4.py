@@ -124,7 +124,7 @@ print(f'O ano {ano} é bissexto: {bissexto}')
 '''
 
 #9. Escreva uma função que recebe como entrada um número n e imprime todas as potências de 2 menores ou iguais a n.
-
+'''
 def potencia(n):
     for valor in range(n+1):
         print(f'{valor}² = {valor**2}')
@@ -132,3 +132,13 @@ def potencia(n):
 n = int(input('Digite um numero: '))
 
 potencia(n)
+'''
+
+#10. Escreva uma função que recebe como entrada um número inteiro positivo n e imprime a representação binária desse número.
+
+def converte_binario(n):
+  print(f'O numero {n} convertido em binário é:', bin(n)[2:])
+
+n = int(input('Digite um numero: '))
+converte_binario(n)
+
