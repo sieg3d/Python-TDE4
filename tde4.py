@@ -135,10 +135,19 @@ potencia(n)
 '''
 
 #10. Escreva uma função que recebe como entrada um número inteiro positivo n e imprime a representação binária desse número.
-
+'''
 def converte_binario(n):
   print(f'O numero {n} convertido em binário é:', bin(n)[2:])
 
 n = int(input('Digite um numero: '))
 converte_binario(n)
+'''
 
+#11. Faça um programa que possua um Dicionário, adicione elementos ao dicionário e os mostre na tela.
+time = {}
+
+time['nome'] = input('Nome do Time: ')
+time['titulo_libertadores'] = int(input('Quantos titulos da libertadores: '))
+time['torcida'] = int(input('Quantidade de torcedores: '))
+
+print(time)
