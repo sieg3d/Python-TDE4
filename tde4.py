@@ -114,10 +114,21 @@ print(f'O resultado da soma do numero digitado e numeros menores que ele é {res
 '''
 
 #8. Escreva uma função que recebe como entrada um número ano e retorna True caso ano seja bissexto. Caso contrário, retorne False.
-
+'''
 def check_bissexto(ano):
     return (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0)
 
 ano = int(input("Insira o ano: "))
 bissexto = check_bissexto(ano)
 print(f'O ano {ano} é bissexto: {bissexto}')
+'''
+
+#9. Escreva uma função que recebe como entrada um número n e imprime todas as potências de 2 menores ou iguais a n.
+
+def potencia(n):
+    for valor in range(n+1):
+        print(f'{valor}² = {valor**2}')
+    
+n = int(input('Digite um numero: '))
+
+potencia(n)
