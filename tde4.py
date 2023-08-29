@@ -78,7 +78,7 @@ print(f'A nota {nota} convertida em conceito é:', conceito(nota))
 
 #6. Escreva uma função que recebe como entrada uma lista ordenada de números e retorna o índice do primeiro elemento maior que um elemento limite.
 #Se nenhum elemento da lista for maior que o limite desejado, retorne o valor -1.
-
+'''
 def maior_elemento(lista, limite):
     posicao = None
     for valor in lista:
@@ -97,3 +97,20 @@ maior_elemento(lista, limite)
 
 
 print(maior_elemento(lista, limite))
+'''
+
+#7. Escreva uma função que recebe como entrada um número inteiro positivo n e retorne a soma de todos os inteiros positivos menores ou iguais a n.
+'''
+def super_soma(n):
+    soma = n
+    for valor in range(n):
+        soma += valor
+    
+    return soma
+
+n = int(input('Digite um numero: '))
+
+resultado = super_soma(n)
+
+print(f'O resultado da soma do numero digitado e numeros menores que ele é {resultado}.')
+'''
