@@ -173,6 +173,7 @@ print(texto)
 
 #13. Faça um programa, utilizando Dicionários, que peça para o usuário inserir o nome de três produtos de mercado e seus respectivos preços e os mostre na tela.
 
+'''
 lista_mercado = {}
 
 for i in range(3):
@@ -183,3 +184,19 @@ for i in range(3):
 
 for produto, valor in lista_mercado.items():
     print(f'{produto}: R${valor:.2f}')
+'''
+
+#14. Faça um programa, utilizando Dicionários, que peça para o usuário inserir quatro notas e mostre na tela as notas e a média entre elas.
+
+notas = {}
+
+for i in range(4):
+    nota = float(input(f'Digite a nota {i+1}'))
+    notas[f'Nota{i+1}'] = nota
+
+soma = sum(notas.values())
+media = soma / 4
+print(notas)
+print(soma)
+print(media)
+    
