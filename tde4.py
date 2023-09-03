@@ -144,6 +144,7 @@ converte_binario(n)
 '''
 
 #11. Faça um programa que possua um Dicionário, adicione elementos ao dicionário e os mostre na tela.
+'''
 time = {}
 
 time['nome'] = input('Nome do Time: ')
@@ -151,3 +152,21 @@ time['titulo_libertadores'] = int(input('Quantos titulos da libertadores: '))
 time['torcida'] = int(input('Quantidade de torcedores: '))
 
 print(time)
+'''
+
+#12.Escreva um programa que gere um dicionário, em que cada chave seja um caractere, e seu valor seja o número desse caractere encontrado em uma frase lida. 
+# Exemplo: O rato -> { “O”:1, “r”:1, “a”:1, “t”:1, “o”:1}
+
+
+frase = input("Insira uma frase:")
+texto = {}
+
+for letra in frase:
+    if letra.isalpha():
+        if letra in texto:
+            texto[letra] +=1
+        else:
+            texto[letra] = 1
+
+print(texto)
+
