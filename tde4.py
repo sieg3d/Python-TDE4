@@ -182,4 +182,4 @@ for i in range(3):
     
 
 for produto, valor in lista_mercado.items():
-    print(f'{produto}: R${valor}')
+    print(f'{produto}: R${valor:.2f}')
