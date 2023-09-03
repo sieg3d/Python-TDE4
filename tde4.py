@@ -157,7 +157,7 @@ print(time)
 #12.Escreva um programa que gere um dicionário, em que cada chave seja um caractere, e seu valor seja o número desse caractere encontrado em uma frase lida. 
 # Exemplo: O rato -> { “O”:1, “r”:1, “a”:1, “t”:1, “o”:1}
 
-
+'''
 frase = input("Insira uma frase:")
 texto = {}
 
@@ -169,4 +169,17 @@ for letra in frase:
             texto[letra] = 1
 
 print(texto)
+'''
 
+#13. Faça um programa, utilizando Dicionários, que peça para o usuário inserir o nome de três produtos de mercado e seus respectivos preços e os mostre na tela.
+
+lista_mercado = {}
+
+for i in range(3):
+    produto = input(f'Produto {i+1}: ')
+    valor = float(input(f'Valor: '))
+    lista_mercado[produto] = valor
+    
+
+for produto, valor in lista_mercado.items():
+    print(f'{produto}: R${valor}')
