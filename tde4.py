@@ -188,6 +188,7 @@ for produto, valor in lista_mercado.items():
 
 #14. Faça um programa, utilizando Dicionários, que peça para o usuário inserir quatro notas e mostre na tela as notas e a média entre elas.
 
+'''
 notas = {}
 
 for i in range(4):
@@ -196,7 +197,21 @@ for i in range(4):
 
 soma = sum(notas.values())
 media = soma / 4
+
 print(notas)
-print(soma)
 print(media)
-    
+'''
+
+#15. Faça um programa, utilizando Dicionários, que:
+#1° Passo: Peça para o usuário inserir quatro coisas em uma “Caixa Misteriosa”
+#2° Passo: Peça para o usuário inserir um número.
+#3° Passo: Mostre na tela o que foi inserido na posição do número inserido pelo usuário.
+
+caixa_misteriosa = {}
+caixa_misteriosa[1] = input('Guarde o primeiro item na caixa misteriosa: ')
+caixa_misteriosa[2] = input('Guarde o segundo item na caixa misteriosa: ')
+caixa_misteriosa[3] = input('Guarde o terceiro item na caixa misteriosa: ')
+caixa_misteriosa[4] = input('Guarde o quarto item na caixa misteriosa: ')
+posicao = int(input('Escolha um numero de 1 a 4: '))
+
+print(f'{caixa_misteriosa[posicao]} está na poisição {posicao}.')
