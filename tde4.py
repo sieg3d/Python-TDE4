@@ -113,7 +113,7 @@ resultado = super_soma(n)
 print(f'O resultado da soma do numero digitado e numeros menores que ele é {resultado}.')
 '''
 
-#8. Escreva uma função que recebe como entrada um número ano e retorna True caso ano seja bissexto. Caso contrário, retorne False.
+# 8. Escreva uma função que recebe como entrada um número ano e retorna True caso ano seja bissexto. Caso contrário, retorne False.
 '''
 def check_bissexto(ano):
     return (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0)
@@ -123,7 +123,7 @@ bissexto = check_bissexto(ano)
 print(f'O ano {ano} é bissexto: {bissexto}')
 '''
 
-#9. Escreva uma função que recebe como entrada um número n e imprime todas as potências de 2 menores ou iguais a n.
+# 9. Escreva uma função que recebe como entrada um número n e imprime todas as potências de 2 menores ou iguais a n.
 '''
 def potencia(n):
     for valor in range(n+1):
@@ -134,7 +134,7 @@ n = int(input('Digite um numero: '))
 potencia(n)
 '''
 
-#10. Escreva uma função que recebe como entrada um número inteiro positivo n e imprime a representação binária desse número.
+# 10. Escreva uma função que recebe como entrada um número inteiro positivo n e imprime a representação binária desse número.
 '''
 def converte_binario(n):
   print(f'O numero {n} convertido em binário é:', bin(n)[2:])
@@ -143,7 +143,7 @@ n = int(input('Digite um numero: '))
 converte_binario(n)
 '''
 
-#11. Faça um programa que possua um Dicionário, adicione elementos ao dicionário e os mostre na tela.
+# 11. Faça um programa que possua um Dicionário, adicione elementos ao dicionário e os mostre na tela.
 '''
 time = {}
 
@@ -154,7 +154,7 @@ time['torcida'] = int(input('Quantidade de torcedores: '))
 print(time)
 '''
 
-#12.Escreva um programa que gere um dicionário, em que cada chave seja um caractere, e seu valor seja o número desse caractere encontrado em uma frase lida. 
+# 12.Escreva um programa que gere um dicionário, em que cada chave seja um caractere, e seu valor seja o número desse caractere encontrado em uma frase lida.
 # Exemplo: O rato -> { “O”:1, “r”:1, “a”:1, “t”:1, “o”:1}
 
 '''
@@ -171,7 +171,7 @@ for letra in frase:
 print(texto)
 '''
 
-#13. Faça um programa, utilizando Dicionários, que peça para o usuário inserir o nome de três produtos de mercado e seus respectivos preços e os mostre na tela.
+# 13. Faça um programa, utilizando Dicionários, que peça para o usuário inserir o nome de três produtos de mercado e seus respectivos preços e os mostre na tela.
 
 '''
 lista_mercado = {}
@@ -186,7 +186,7 @@ for produto, valor in lista_mercado.items():
     print(f'{produto}: R${valor:.2f}')
 '''
 
-#14. Faça um programa, utilizando Dicionários, que peça para o usuário inserir quatro notas e mostre na tela as notas e a média entre elas.
+# 14. Faça um programa, utilizando Dicionários, que peça para o usuário inserir quatro notas e mostre na tela as notas e a média entre elas.
 
 '''
 notas = {}
@@ -202,11 +202,12 @@ print(notas)
 print(media)
 '''
 
-#15. Faça um programa, utilizando Dicionários, que:
-#1° Passo: Peça para o usuário inserir quatro coisas em uma “Caixa Misteriosa”
-#2° Passo: Peça para o usuário inserir um número.
-#3° Passo: Mostre na tela o que foi inserido na posição do número inserido pelo usuário.
+# 15. Faça um programa, utilizando Dicionários, que:
+# 1° Passo: Peça para o usuário inserir quatro coisas em uma “Caixa Misteriosa”
+# 2° Passo: Peça para o usuário inserir um número.
+# 3° Passo: Mostre na tela o que foi inserido na posição do número inserido pelo usuário.
 
+'''
 caixa_misteriosa = {}
 caixa_misteriosa[1] = input('Guarde o primeiro item na caixa misteriosa: ')
 caixa_misteriosa[2] = input('Guarde o segundo item na caixa misteriosa: ')
@@ -215,3 +216,26 @@ caixa_misteriosa[4] = input('Guarde o quarto item na caixa misteriosa: ')
 posicao = int(input('Escolha um numero de 1 a 4: '))
 
 print(f'{caixa_misteriosa[posicao]} está na poisição {posicao}.')
+'''
+
+# 16. Faça um programa, utilizando Dicionários, que:
+# 1° Passo: Peça para o usuário inserir o nome de três funcionários e os mostre natela.
+# 2° Passo: Peça para o usuário demitir um funcionário e mostre na tela os funcionários restantes.
+
+funcionarios = {}
+matricula = {}
+
+for cadastro in range(3):
+     nome = input('Nome do funcionário {}: '.format(cadastro + 1))
+     funcionarios[cadastro + 1] = nome
+
+print("Funcionários cadastrados:")
+for matricula, nome in funcionarios.items():
+    print(f'Matrícula: {matricula}, Nome: {nome}')
+
+demitir = int(input('Digite a matricula do funcionário que deseja demitir: '))
+demitido = funcionarios.pop(demitir)
+
+print("Funcionários cadastrados:")
+for matricula, nome in funcionarios.items():
+    print(f'Matrícula: {matricula}, Nome: {nome}')
